@@ -22,7 +22,7 @@ import datetime
 import psutil
 import webbrowser
 import vlc
-import json
+import json # sem uso.
 import requests
 import time
 import wikipedia
@@ -32,12 +32,14 @@ r = sr.Recognizer()
 def SomIncial():
     p = vlc.MediaPlayer("StartSound.mp3")
     p.play()
+    time.sleep(4)
 
 SomIncial()
 
 def SomCarregamento():
     p = vlc.MediaPlayer("AI.mp3")
     p.play()
+    time.sleep(4)
 
 # Validacao da pasta de modelo
 # É necessario criar a pasta model-br a partir de onde estiver esta fonte
